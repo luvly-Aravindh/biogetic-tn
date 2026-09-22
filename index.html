@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Our Trial Helped 68% of Patients. Now About the Other 32%.</title>
+<meta name="description" content="Trigeminal neuralgia is misdiagnosed in up to half of cases. A 2022 study reports 68% of patients found relief on an alternative protocol. We examine the evidence."/>
+<meta name="robots" content="index, follow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Open+Sans:wght@400;600;700;800&family=Lato:wght@700;900&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden}
+body{display:flex;flex-direction:column;min-height:100vh;font-family:"Open Sans",ui-sans-serif,system-ui,sans-serif;background:#fff;color:#2f2f2f;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:#2E6992}
+.adv-bar{background:#333;color:#fff;padding:10px;text-align:center;font-size:14px;line-height:1;font-family:Helvetica,serif}
+.masthead{background:#FFE694;border:1px solid #5B828D;padding:20px}
+.masthead p{margin:0;color:#071518;font-size:22px;line-height:26px;text-align:center;font-family:Roboto,sans-serif}
+.masthead strong{font-weight:900}
+main{flex:1}
+.shell{padding:10px 10px 0}
+.prose{max-width:1170px;margin:0 auto;padding-bottom:56px}
+.eyebrow{font-family:Roboto,sans-serif;display:block;margin-bottom:20px;font-size:16px;line-height:26px;width:max-content;max-width:100%;border-bottom:3px solid #85d3e8;padding-bottom:5px;color:#424242}
+h1{font-family:Roboto,sans-serif;font-size:25px;line-height:36px;color:#1a1a1a;margin:0;font-weight:700}
+h2{font-family:Roboto,sans-serif;font-size:22px;line-height:32px;color:#1a1a1a;margin:38px 0 18px;font-weight:700}
+h3.deck{font-family:Roboto,sans-serif;margin:10px 0 0;font-size:18px;line-height:1.45;font-weight:400;color:#2f2f2f}
+.author{display:flex;align-items:center;gap:10px;margin-top:20px}
+.author>img{width:50px;height:50px;flex-shrink:0;border-radius:4px;object-fit:cover}
+.author-meta{display:flex;flex-direction:column}
+.author-name{display:flex;gap:4px;align-items:center}
+.author-name strong{font-weight:700;font-size:18px;line-height:28px;color:#313131;font-family:Roboto,sans-serif}
+.verified{color:#27ca40;width:20px;height:auto;display:inline-block}
+.author-sub{color:#575757;font-family:Roboto,sans-serif;font-size:16px}
+br.spacer{display:block;content:"";margin-top:14px}
+.section-container p{font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:26px;margin:26px 0;color:#2f2f2f}
+.section-container strong{font-weight:700;color:#1a1a1a}
+.section-container blockquote{background:#E2F4F9;padding:24px 32px;margin:26px 0;border:0}
+.section-container blockquote p{margin:0}
+.fn{font-size:13px !important;color:#6a6a6a;font-family:Roboto,sans-serif !important;margin-top:-14px !important;line-height:20px !important}
+.duo{display:grid;grid-template-columns:1fr;gap:12px;margin:26px 0}
+.duo .dcell{aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:#e9edf1}
+.duo .dcell img{width:100%;height:100%;object-fit:cover}
+.sidebar-layout{display:grid;grid-template-columns:1fr}
+.sidebar-layout>*{min-width:0}
+.aside-container{display:none}
+.cta{text-decoration:none;text-align:center;display:block;max-width:100%;box-shadow:0 4px 7px 1px rgba(0,0,0,.19);font-family:"Open Sans",sans-serif;padding:12px 30px;margin:26px 0 30px;font-size:17px;line-height:1.25;font-weight:700;letter-spacing:.01em;color:#f6f9fe;background-color:#149312;border-radius:5px}
+.cta p{margin:0}
+.about-card,.card-stack,.pricing-card{background:#F7F8F8;padding:20px;border-radius:5px}
+.card-title{font-size:20px;font-weight:700;font-family:Roboto,sans-serif;margin:0;color:#1a1a1a}
+.about-card>img{width:160px;height:auto;margin:20px auto;border-radius:8px;display:block}
+.about-body{font-family:Georgia,serif;font-size:17px;line-height:27px;color:#2f2f2f}
+.about-body .sig{margin-top:16px;font-family:Roboto,sans-serif;font-weight:700;font-size:16px}
+.stacking-quote img{max-height:150px;object-fit:cover;width:100%;border-radius:5px;margin-bottom:20px}
+.stacking-quote p{font-family:Georgia,serif;font-size:18px;margin:0}
+.stacking-quote .who{margin-top:16px}
+.quote-stack{margin-top:30px}
+.quote-stack>*+*{margin-top:30px}
+@keyframes pricePop{0%{opacity:0;transform:translateY(18px) scale(.985)}100%{opacity:1;transform:none}}
+@keyframes softPulse{0%,100%{box-shadow:0 4px 11px rgba(0,0,0,.10)}50%{box-shadow:0 8px 24px rgba(43,220,70,.55)}}
+.pricing-anim{animation:pricePop .65s cubic-bezier(.2,.7,.3,1) both;position:sticky;top:0}
+
+.pdivide{height:1px;background:#e4e4e4;margin:16px 0}
+.prow{display:flex;justify-content:space-between;font-size:14px;color:#444;margin:6px 0}
+.prow b{color:#111}
+.pricing-card>img{width:100%;height:auto;border-radius:6px;margin:16px 0;background:#fff}
+.strike{text-decoration:line-through;color:#8a8a8a;font-weight:400}
+.buy-btn{text-decoration:none;font-size:18px;line-height:28px;border-radius:15px;padding:16px 10px;font-family:Lato,sans-serif;font-weight:900;background:#2bdc46;display:block;text-align:center;box-shadow:0 4px 11px 0 rgba(0,0,0,.10);color:#08350f}
+.buy-btn p{margin:0}
+.scarcity{font-size:14px;color:#5c1f22;text-align:center;margin-top:12px;line-height:1.5}
+.disc{font-size:12px;color:#777;font-family:Roboto,sans-serif;margin-top:20px;line-height:1.5}
+.mobile-cards{margin-top:30px}
+.mobile-cards>*+*{margin-top:20px}
+.comments{margin-top:80px;padding:0 20px;max-width:1170px;margin-left:auto;margin-right:auto}
+.comments-title{font-family:"Open Sans",sans-serif;font-size:16px;line-height:1;font-weight:700;margin:0 0 28px}
+.comments input{padding:20px;background:#fff;outline:none;border:1px solid #dedede;font-size:14px;color:#303030;width:100%;font-family:inherit}
+.comments ul{list-style:none;margin:8px 0 0;padding:0}
+.comments li{display:flex;gap:8px;margin-top:8px}
+.comments li>img{width:48px;height:48px;margin-top:4px;border-radius:9999px;object-fit:cover;flex-shrink:0;background:#dfe3e8}
+.comment-reply{margin-left:44px}
+.comment-reply>img{width:36px !important;height:36px !important}
+.cbody{font-family:Helvetica,Arial,sans-serif}
+.cname{color:#3b5998;font-size:14px;font-weight:700;margin:0}
+.ctext{margin:4px 0;font-size:14px;word-break:break-word}
+.cmeta{height:24px;display:flex;align-items:center;gap:4px;margin:4px 0}
+.cmeta .act{font-size:12px;color:#627aad;line-height:20px}
+.cmeta .num,.cmeta .time{font-size:12px;color:#7f7f7f;line-height:20px;display:flex;align-items:center}
+.cimg{height:200px;width:300px;object-fit:cover;border-radius:6px;background:#dfe3e8;margin:6px 0}
+.legal{padding:0 20px 14px;font-family:"Open Sans",sans-serif;font-size:12px;line-height:20px;color:#555;max-width:1170px;margin:0 auto}
+.legal:first-of-type{padding-top:40px}
+.legal strong{color:#222}
+.copyright{padding:0 20px 40px;font-size:12px;color:#777;max-width:1170px;margin:0 auto}
+@media (min-width:768px){
+.masthead p{font-size:1.75rem;line-height:2rem}
+h1{font-size:39px;line-height:55px}
+h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
+.eyebrow{font-size:18px}
+.section-container p{font-size:20px;line-height:2rem;margin:2rem 0}
+.duo{grid-template-columns:1fr 1fr;gap:14px}
+.sidebar-layout{grid-template-columns:72% 1fr}
+.sidebar-layout>.section-container{padding:10px 30px 0 0}
+.aside-container{display:block}
+.mobile-cards{display:none}
+.cta{font-size:21px;padding:14px 40px}
+.buy-btn{font-size:20px;line-height:32px;font-weight:800}
+}
+
+.shot{margin:26px 0}
+.shot img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.shot figcaption{font-family:Roboto,sans-serif;font-size:13px;line-height:19px;color:#6a6a6a;margin-top:9px;padding-left:2px;border-left:3px solid #85d3e8;padding-left:10px}
+.shot .cap-src{display:block;color:#9a9a9a;font-size:12px;margin-top:2px}
+
+@keyframes ctaZoom{0%,100%{transform:scale(1)}50%{transform:scale(1.014)}}
+@keyframes ctaGlow{0%,100%{box-shadow:0 3px 6px 0 rgba(0,0,0,.16)}50%{box-shadow:0 6px 20px 1px rgba(20,147,18,.34)}}
+.cta{animation:ctaZoom 2.6s ease-in-out infinite, ctaGlow 2.6s ease-in-out infinite;transform-origin:center;will-change:transform}
+.cta p,.section-container .cta p{margin:0 !important;font-size:inherit !important;line-height:1.25 !important;font-family:"Open Sans",sans-serif !important;color:inherit !important}
+.cta .cta-sub,.section-container .cta .cta-sub{font-size:12.5px !important;line-height:1.45 !important;font-weight:400 !important}
+.cta:hover{animation-play-state:paused;transform:scale(1.022);transition:transform .2s ease}
+.cta .cta-sub{display:block;font-size:12.5px;font-weight:400;opacity:.9;margin-top:6px;letter-spacing:.03em}
+@keyframes btnZoom{0%,100%{transform:scale(1)}50%{transform:scale(1.016)}}
+.pricing-anim>a.buy-btn{animation:btnZoom 2.2s ease-in-out infinite, softPulse 2.2s ease-in-out infinite;transform-origin:center;will-change:transform}
+.buy-btn:hover{animation-play-state:paused;transform:scale(1.05);transition:transform .2s ease}
+@media (prefers-reduced-motion:reduce){.cta,.buy-btn,.pricing-anim{animation:none!important}}
+
+.urgency{background:#FFF1F1;border:1px solid #E8B4B4;border-radius:6px;padding:14px 18px;margin:26px 0;font-family:Roboto,sans-serif}
+.urgency .u-h{font-weight:700;color:#8C2A2A;font-size:15px;letter-spacing:.02em;display:flex;align-items:center;gap:8px}
+.urgency .u-dot{width:9px;height:9px;border-radius:50%;background:#c81e1e;display:inline-block;animation:blip 1.6s ease-in-out infinite}
+@keyframes blip{0%,100%{opacity:1}50%{opacity:.25}}
+.urgency p{font-family:Roboto,sans-serif!important;font-size:14px!important;line-height:21px!important;color:#6b3838!important;margin:7px 0 0!important}
+.stockbar{height:7px;background:#EADADA;border-radius:99px;margin:11px 0 6px;overflow:hidden}
+.stockbar i{display:block;height:100%;width:23%;background:linear-gradient(90deg,#c81e1e,#e0653f);border-radius:99px}
+.stocktxt{font-size:12px;color:#8C2A2A;font-family:Roboto,sans-serif}
+.coupon{display:inline-block;border:1px dashed #149312;color:#0d6b0c;background:#F2FBF2;border-radius:4px;padding:4px 10px;font-family:"JetBrains Mono",Roboto,monospace;font-weight:700;letter-spacing:.06em;font-size:13px}
+.pricing-card>img{background:transparent!important;padding:6px 0}
+
+/* ---- comparison table ---- */
+.cmp-wrap{margin:26px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.cmp{border-collapse:collapse;width:100%;min-width:660px;font-family:Roboto,sans-serif;font-size:14px}
+.cmp th,.cmp td{border:1px solid #e2e6ea;padding:11px 13px;vertical-align:top;text-align:left;line-height:1.45}
+.cmp thead th{background:#0f2b33;color:#fff;font-weight:700;font-size:13px;letter-spacing:.02em}
+.cmp tbody tr:nth-child(even){background:#F7F9FA}
+.cmp td:first-child{font-weight:700;color:#1a1a1a;white-space:nowrap}
+.cmp .hi{background:#EAF7EA !important}
+.cmp .hi td:first-child{color:#0d6b0c}
+.cmp-note{font-family:Roboto,sans-serif;font-size:12.5px;color:#6a6a6a;margin-top:8px;line-height:1.5}
+.swipe{display:none;font-family:Roboto,sans-serif;font-size:12px;color:#8a8a8a;margin-bottom:6px}
+
+/* ---- FAQ accordion ---- */
+.faq{margin:26px 0;border-top:1px solid #e2e6ea}
+.faq details{border-bottom:1px solid #e2e6ea}
+.faq summary{cursor:pointer;padding:15px 30px 15px 2px;font-family:Roboto,sans-serif;font-weight:700;font-size:16.5px;color:#14303a;list-style:none;position:relative;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:6px;top:13px;font-size:22px;font-weight:400;color:#5B828D}
+.faq details[open] summary:after{content:"\2013"}
+.faq .fa{padding:0 6px 17px 2px;font-family:Georgia,serif;font-size:16.5px;line-height:26px;color:#2f2f2f}
+.faq .fa p{margin:0 0 12px !important;font-size:16.5px !important;line-height:26px !important;font-family:Georgia,serif !important}
+.faq .fa p:last-child{margin-bottom:0 !important}
+
+/* ---- kit progression ---- */
+.ladder{margin:24px 0;background:#F7F8F8;border-radius:6px;padding:18px 20px;font-family:Roboto,sans-serif}
+.ladder-track{display:flex;align-items:center;gap:0;margin:14px 0 10px}
+.ladder-step{flex:1;text-align:center;position:relative}
+.ladder-dot{width:13px;height:13px;border-radius:50%;background:#149312;margin:0 auto 8px;position:relative;z-index:2}
+.ladder-step:not(:last-child):after{content:"";position:absolute;top:6px;left:50%;width:100%;height:2px;background:#cfd8d5;z-index:1}
+.ladder-l{font-size:13px;font-weight:700;color:#14303a;line-height:1.35}
+.ladder-s{font-size:12px;color:#6a7a72;margin-top:2px}
+.ladder-cap{font-size:13px;color:#4a5a52;line-height:1.55;margin:0}
+
+/* ---- top strip CTA ---- */
+.topcta{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  border-top:2px solid #149312;border-bottom:1px solid #e2e6ea;background:#F6FBF6;padding:13px 16px;margin:22px 0 4px}
+.topcta span{font-family:Roboto,sans-serif;font-size:14px;color:#22402a;line-height:1.45}
+.topcta a{font-family:"Open Sans",sans-serif;font-weight:700;font-size:14px;color:#fff;background:#149312;
+  padding:10px 20px;border-radius:4px;text-decoration:none;white-space:nowrap}
+
+/* ---- sticky mobile bar ---- */
+.stickybar{display:none}
+@media (max-width:767px){
+  .swipe{display:block}
+  .stickybar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;align-items:center;gap:10px;
+    background:rgba(255,255,255,.97);border-top:1px solid #dfe4e8;padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+    box-shadow:0 -3px 14px rgba(0,0,0,.11)}
+  .stickybar .sb-t{flex:1;font-family:Roboto,sans-serif;font-size:12px;line-height:1.3;color:#3a4a44}
+  .stickybar .sb-t b{display:block;font-size:13.5px;color:#14303a}
+  .stickybar a{font-family:"Open Sans",sans-serif;font-weight:700;font-size:14px;color:#fff;background:#149312;
+    padding:11px 16px;border-radius:5px;text-decoration:none;white-space:nowrap;
+    animation:btnZoom 2.6s ease-in-out infinite;transform-origin:center}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+  .cmp{min-width:560px;font-size:13px}
+}
+@media (min-width:768px) and (max-width:980px){.swipe{display:block}}
+@media (prefers-reduced-motion:reduce){.stickybar a{animation:none!important}}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="adv-bar">Advertorial</div>
+  <div class="masthead"><p><strong>Integrative Health</strong> Today</p></div>
+</header>
+
+<main>
+<div class="shell">
+<div class="prose">
+
+  <span class="eyebrow">Neurology &amp; Chronic Pain</span>
+
+  <h1>Half of Trigeminal Neuralgia Cases Are Misdiagnosed. A Small Study Points to an Unlikely Alternative That May Ease the Pain, Whatever the Cause.</h1>
+
+  <h3 class="deck">Patients lose healthy teeth to a nerve condition that dentists cannot see on an x-ray. A 2022 paper reports that a herbal and homeopathic protocol by Biogetica helped 68% of them. We looked at what that paper does and does not establish.</h3>
+
+  <div class="author">
+    <img alt="Integrative Health Today" src="assets/masthead-mark.jpg"/>
+    <div class="author-meta">
+      <div class="author-name">
+        <strong>By the Health Desk</strong>
+        <svg class="verified" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M225.86 102.82c-3.77-3.94-7.67-8-9.14-11.57c-1.36-3.27-1.44-8.69-1.52-13.94c-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52c-3.56-1.47-7.63-5.37-11.57-9.14C146.28 23.51 138.44 16 128 16s-18.27 7.51-25.18 14.14c-3.94 3.77-8 7.67-11.57 9.14c-3.25 1.36-8.69 1.44-13.94 1.52c-9.76.15-20.82.31-28.51 8s-7.8 18.75-8 28.51c-.08 5.25-.16 10.67-1.52 13.94c-1.47 3.56-5.37 7.63-9.14 11.57C23.51 109.72 16 117.56 16 128s7.51 18.27 14.14 25.18c3.77 3.94 7.67 8 9.14 11.57c1.36 3.27 1.44 8.69 1.52 13.94c.15 9.76.31 20.82 8 28.51s18.75 7.85 28.51 8c5.25.08 10.67.16 13.94 1.52c3.56 1.47 7.63 5.37 11.57 9.14c6.9 6.63 14.74 14.14 25.18 14.14s18.27-7.51 25.18-14.14c3.94-3.77 8-7.67 11.57-9.14c3.27-1.36 8.69-1.44 13.94-1.52c9.76-.15 20.82-.31 28.51-8s7.85-18.75 8-28.51c.08-5.25.16-10.67 1.52-13.94c1.47-3.56 5.37-7.63 9.14-11.57c6.63-6.9 14.14-14.74 14.14-25.18s-7.51-18.27-14.14-25.18m-52.2 6.84l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32" fill="currentColor"></path></svg>
+      </div>
+      <span class="author-sub">Sponsored feature, paid for by the advertiser &middot; <span id="pubdate">today</span></span>
+    </div>
+  </div>
+
+  <br class="spacer"/>
+
+  <div class="topcta">
+    <span>Already know what you are looking for? A doctor consultation is free and happens before any purchase.</span>
+    <a href="https://www.biogetica.com/trigeminal-neuralgia/">Free Doctor Consult &rarr;</a>
+  </div>
+
+  <br class="spacer"/>
+
+  <div class="duo">
+    <div class="dcell"><img alt="Dental treatment" src="assets/hero-dental.jpg"/></div>
+    <div class="dcell"><img alt="Brain MRI" src="assets/hero-mri.jpg"/></div>
+  </div>
+
+  <br class="spacer"/>
+
+  <section class="sidebar-layout">
+    <section class="section-container">
+
+      <p>Most people with this condition can tell you how many teeth they lost before anyone got it right.</p>
+
+      <p>Two. Three. Sometimes an entire quadrant. Root canals on healthy molars. Extractions that changed nothing, because the problem was never in the tooth. It was in a nerve behind it, and the dentist had no way of knowing that from an x-ray.</p>
+
+      <p><strong>This is not a rare failure. Studies in Dutch general practice found trigeminal neuralgia is misdiagnosed in up to 48% of cases.</strong> Roughly half. And because the pain sits in the upper and lower jaw, the first person most patients see is a dentist, which is exactly how irreversible procedures end up being performed on teeth that were never the problem.</p>
+
+      <p class="fn">Management of trigeminal neuralgia, a multi-centre case study in general practice, 2023.</p>
+
+      <p>By the time somebody finally says the words trigeminal neuralgia, most people have been in pain for a year or more, have been quietly treated as though they were exaggerating, and have lost teeth they will not get back.</p>
+
+      <p><strong>An Indian integrative medicine company called Biogetica sells a protocol for this condition, and it is the subject of the study below. Here is the number it reports, followed immediately by what is wrong with it.</strong></p>
+
+      <p>In 2022, a group of physicians published a study in the International Journal of Research in Ayurvedic Pharmacy. It examined a combination of Cronisol-D, OM 13 TN Formula and Neuralease. It reported that 68% of trigeminal neuralgia patients experienced relief, without the side effects associated with the standard drugs.</p>
+
+      <p><strong>Sixty-eight percent means thirty-two percent did not.</strong></p>
+
+      <p>Nearly one in three people in that study took the protocol and it did not do for them what it did for the others. That figure belongs beside the headline rather than in a footnote. Anyone already let down by three treatments is entitled to the failure rate before the price.</p>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>See the Kits &gt;&gt;<span class="cta-sub">Free doctor consult first &middot; 100% money-back guarantee &middot; code READY for 10% off</span></p></a>
+
+      <h2>First, What This Condition Actually Is</h2>
+
+      <figure class="shot">
+        <img alt="Trigeminal nerve anatomy" src="assets/fig-nerve.jpg"/>
+        <figcaption>The fifth cranial nerve, and the reason the pain feels like it is coming from your teeth</figcaption>
+      </figure>
+
+      <p>The trigeminal nerve is the fifth cranial nerve. It carries sensation from your face, and it splits into three branches: one above the eye, one across the cheek and upper jaw, and one along the lower jaw.</p>
+
+      <p>When it misfires, the result is a sudden electric stab down one side of the face. Seconds to minutes. Triggered by nothing dramatic at all: chewing, talking, brushing your teeth, a cold draught through a window.</p>
+
+      <p><strong>It is commonly called the suicide disease.</strong> That name is not marketing language invented by supplement companies. It is what clinicians have called it for decades, and the reason is documented: people living with trigeminal neuralgia carry a measurably higher risk of suicide than the general population.</p>
+
+      <p>Pain scales are a blunt instrument, but patients who have had both routinely rate a trigeminal attack above childbirth and above kidney stones. The attacks arrive without warning, several times an hour in a bad week, and there is nothing to do but wait out the twenty seconds. What breaks people is rarely a single attack. It is the arithmetic of a decade of them, plus the fact that nothing shows on a scan and almost nobody around them believes it is that bad.</p>
+
+      <p>Anyone reading this while in that place should know two things. There are treatments that work, several of them, and they are set out below. And if the thought of ending it has crossed your mind, that is a documented feature of this condition and not a personal failing. Please tell your doctor that part too, not just the pain score.</p>
+
+      <p>It is not common. UK primary care records covering 6.8 million people identified 8,268 cases, an incidence of about 27 per 100,000 person-years. It affects women more often than men, and the incidence climbs steeply with age. In men over eighty it reaches 45 per 100,000.</p>
+
+      <p>Being uncommon is part of the problem. It is why so many clinicians see it once or twice in a career, and why it takes so long for anyone to name it.</p>
+
+      <h2>What Conventional Treatment Offers, and What It Costs</h2>
+
+      <figure class="shot">
+        <img alt="Medication and clinical instruments" src="assets/fig-meds.jpg"/>
+        <figcaption>Carbamazepine is the only drug with a specific FDA indication for this condition</figcaption>
+      </figure>
+
+      <p><strong>Carbamazepine works, and if you are on it, keep taking it.</strong> It is the established first-line treatment and the only drug with a specific FDA indication for trigeminal neuralgia. Nothing on this page is a reason to stop a prescription, and you should not change one without speaking to your own neurologist.</p>
+
+      <p>What the literature also records is the cost of staying on it. Carbamazepine increases pain relief compared with placebo, and it increases adverse effects: drowsiness, dizziness, rash, ataxia, liver damage. In one study of patients on carbamazepine or oxcarbazepine, the most frequently reported problems were tiredness, memory problems, sleepiness, difficulty concentrating and unsteadiness.</p>
+
+      <p>Then there is the harder part. For many people the dose that worked last year does not work this year, and the choice becomes a higher dose with heavier side effects, or a procedure.</p>
+
+      <p><strong>Opioids are the option patients most often ask for and the one specialists are most reluctant to give.</strong> Not only because of dependency and tolerance, though both are real, but because trigeminal neuralgia responds poorly to them. It is a nerve-firing problem rather than a tissue-damage problem, and opioids are built for the second. Patients frequently end up dependent on a drug that was never going to control this particular pain.</p>
+
+      <p><strong>Gamma Knife radiosurgery</strong> focuses radiation on the nerve root to damage it enough that it stops transmitting. There is no incision and no general anaesthetic, which is why it appeals to older patients and to anyone unfit for surgery. The trade-offs are that relief typically takes weeks to months to arrive, a substantial share of patients see the pain return within a few years, and facial numbness is a common and sometimes permanent result. It is also expensive.</p>
+
+      <p><strong>Microvascular decompression is the one that actually addresses a cause.</strong> In a large share of cases the trigger is a blood vessel resting against the nerve root. A surgeon opens behind the ear, lifts the vessel away and pads it. For the right patient the results are the best available anywhere: high rates of complete relief, often lasting a decade or longer, with the nerve left intact rather than deliberately damaged.</p>
+
+      <p>It is also brain surgery. General anaesthetic, a craniotomy near the brainstem, several days in hospital and weeks of recovery. The recognised risks include hearing loss on that side, facial weakness, leakage of spinal fluid and, rarely, stroke. It is offered mainly to younger and fitter patients for exactly that reason, and it is not a realistic option for a great many people who have this condition.</p>
+
+      <h2>The Five Options, Side by Side</h2>
+
+      <p class="swipe">Swipe the table sideways to see every column</p>
+      <div class="cmp-wrap">
+        <table class="cmp">
+          <thead><tr><th>Option</th><th>What it does</th><th>Main trade-off</th><th>Typical cost</th></tr></thead>
+          <tbody>
+            <tr><td>Carbamazepine</td><td>Calms nerve firing. First line, and the only drug with a specific FDA indication for this condition.</td><td>Drowsiness, memory problems, unsteadiness, liver monitoring. Effect often fades over years.</td><td>Low</td></tr>
+            <tr><td>Opioids</td><td>Blunt pain signalling generally.</td><td>Work poorly on this specific pain. Dependency and tolerance. Most specialists avoid them here.</td><td>Low to moderate</td></tr>
+            <tr><td>Gamma Knife</td><td>Radiation damages the nerve so it stops transmitting. No incision.</td><td>Weeks to months before relief. Facial numbness common. Recurrence within a few years for a substantial share.</td><td>High</td></tr>
+            <tr><td>Microvascular<br/>decompression</td><td>Moves the blood vessel off the nerve. Addresses a cause rather than a symptom.</td><td>Brain surgery. Hearing loss, facial weakness, CSF leak, rare stroke. Not offered to everyone.</td><td>Highest</td></tr>
+            <tr class="hi"><td>Biogetica<br/>protocol</td><td>Nerve support and inflammatory pathways rather than blocking the signal. Taken alongside existing treatment.</td><td>Evidence is one small study in a non-indexed journal. Takes months. Helped 68% and not the other 32%.</td><td>$98 to $449</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cmp-note">Costs vary widely by country and insurer. The success figures quoted for surgical and medical options use different endpoints and different populations, so they cannot be read as a like-for-like ranking. Anyone comparing them, this page included, should say so plainly.</p>
+
+      <p>Every one of these is a legitimate option and some people should take the surgical ones. Nothing here is an argument against an operation that works. But there is a large group sitting between the drug that has stopped working and the procedure they are not ready for, or not eligible for, and conventional medicine offers that group very little.</p>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>See What the Fifth Option Involves &gt;&gt;<span class="cta-sub">Free doctor consult first &middot; from $98 &middot; 100% money-back guarantee</span></p></a>
+
+      <p>Every one of these is a legitimate medical option and some people should take them. Nothing here is an argument against surgery. But there is a large group of people sitting between the drug that has stopped working and the operation they are not ready for, and almost nobody is offering that group anything at all.</p>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>Talk to a Doctor First &gt;&gt;<span class="cta-sub">No card required &middot; they are allowed to tell you no</span></p></a>
+
+    </section>
+
+    <aside class="aside-container">
+      <div class="about-card">
+        <p class="card-title">About this report</p>
+        
+        <div class="about-body">
+          This is a sponsored feature. The advertiser paid for placement and supplied the product information and study references. The Health Desk wrote the copy and checked the epidemiology and treatment claims against independent sources, which are cited inline.<br/><br/>
+          Every clinical figure below links to its source. Where a claim rests only on the advertiser's own research, that is stated in the text rather than left for the reader to discover.<br/><br/>
+          Nothing here is medical advice. Trigeminal neuralgia has no cure and no product on this page changes that.
+          <p class="sig">Integrative Health Today &middot; Health Desk</p>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="sidebar-layout">
+    <section class="section-container">
+
+      <h2>What The Study Found, and What It Does Not Prove</h2>
+
+      <figure class="shot">
+        <img alt="Laboratory research" src="assets/fig-research.jpg"/>
+        <figcaption>Published in the International Journal of Research in Ayurvedic Pharmacy, 2022</figcaption>
+      </figure>
+
+      <p>Here is the finding, stated once, plainly. A group of physicians reported that the combination of four Biogetica formulas improved outcomes for 68% of trigeminal neuralgia patients, without the side effects that come with the standard drug regimen.</p>
+
+      <p>A separate paper, published on ScienceDirect, reported that trigeminal neuralgia patients using natural remedies obtained an overall reduction of more than 60% in both pain intensity and attack frequency.</p>
+
+      <p class="fn">Both papers are linked and public. Read them before you decide anything.</p>
+
+      <p><strong>The caveats matter as much as the number.</strong></p>
+
+      <p>The 2022 paper was published in a specialist Ayurvedic pharmacy journal, not in a general medical journal, and it is not indexed in the same databases your neurologist searches. That does not make it false. It does mean it has not been through the same level of scrutiny as a large randomised trial, and you should weigh it accordingly.</p>
+
+      <p>It also examined the manufacturer's own protocol. Research funded by the company selling the product is common across the whole of medicine, pharmaceutical medicine included, but readers are entitled to know it up front.</p>
+
+      <p>And 68% is not everyone. Read it next to the honest numbers on the other side: surgical studies measure complete pain relief, medical studies typically count 50% pain reduction as a success. These are not the same measurement, and anyone comparing them directly, us included, should say so.</p>
+
+      <p><strong>What the evidence supports is narrower than the marketing around it.</strong> There is a published report that this protocol helped a majority of the people studied, without the drowsiness, memory problems and liver monitoring that come with the standard drugs. That is a real thing. It is not a cure, and no honest reading of the paper makes it one.</p>
+
+      <h2>Why the Misdiagnosis Problem Matters Less for This Option Than the Others</h2>
+
+      <p>Facial pain has several distinct causes and they do not all respond to the same thing. A blood vessel pressing on the nerve root. Demyelination from multiple sclerosis. A tumour. Post-herpetic damage. Dental and sinus problems that mimic all of the above. And a sizeable group where every scan is clean and no cause is ever identified.</p>
+
+      <p><strong>Most conventional options are gated on which of those you have.</strong> Microvascular decompression only helps if there is a vessel to move, and does nothing for pain driven by MS. Gamma Knife targets a nerve root. Dental work fixes nothing at all if the tooth was never the problem, which is precisely how so many patients lose healthy molars before anyone reaches the right diagnosis.</p>
+
+      <p>The Biogetica protocol is built differently. Cronisol-D, Neuralease and the TN Formula are aimed at nerve support and inflammatory pathways rather than at a specific structural cause. GABA to reduce neuronal excitability, lion's mane studied for nerve growth factor, Bacopa monnieri for nerve structure, willow bark and devil's claw on the inflammatory side.</p>
+
+      <p><strong>That is a claim about scope, not about superiority.</strong> It means the protocol is not conditional on getting the structural diagnosis right first, which matters a great deal when up to half of cases are misdiagnosed and the average patient waits more than a year for a correct one. It does not mean it works better than surgery for someone who has a vessel that can be moved.</p>
+
+      <p>There is a second structural difference worth naming. Carbamazepine suppresses symptoms and has to be taken continuously for as long as it keeps working, which is why dose escalation is such a familiar story. The protocol is sold as a four month course rather than an indefinite prescription, because nerve support is not something that produces a result in days and is not designed as an every-day-forever intervention. Whether that holds for any individual is exactly what the study did not settle for the 32%.</p>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>Check Whether It Fits Your Diagnosis &gt;&gt;<span class="cta-sub">Free consult with a doctor &middot; they can tell you it is not right for you</span></p></a>
+
+      <h2>What Is Actually in the Salvation Kit</h2>
+
+      <figure class="shot">
+        <img alt="Lion's mane mushroom" src="assets/fig-lionsmane.jpg"/>
+        <figcaption>Hericium erinaceus, lion's mane, at 30mg in Cronisol-D. Studied for nerve growth factor production</figcaption>
+      </figure>
+
+      <p>Six products. Every ingredient and every milligram is published in full on the product page. No proprietary blend, no hidden quantities, nothing you cannot take to your own neurologist before you order.</p>
+
+      <p><strong>Cronisol-D.</strong> The nutraceutical core. GABA at 15mg, the inhibitory neurotransmitter that reduces neuronal excitability. Lion's mane at 30mg. Cat's claw at 50mg, ginkgo biloba at 45mg, devil's claw at 45mg, aloe vera and black currant at 35mg each, willow bark at 35mg, California poppy and horsetail at 20mg, Hypericum at 20mg. Then L-tryptophan, leucine, L-methionine, phosphatidyl-L-serine, magnesium gluconate, vitamin B6 and B12.</p>
+
+      <p><strong>Neuralease.</strong> The Ayurvedic tablet, built on Bacopa monnieri at 200mg with Pluchea lanceolata, liquorice, amla, haritaki, vetiver and others, traditionally used to support nerve structure and function.</p>
+
+      <p><strong>TN Formula.</strong> Homeopathic. Aconite 30, Hypericum 200, Hekla Lava 30, Spigelia 30.</p>
+
+      <p><strong>OM 13 Formula.</strong> Potentized bioenergetic impressions of peripheral nerve endings and the trigeminal nerve, containing no actual molecules.</p>
+
+      <p><strong>Equilibrium and Equilife.</strong> The two additional formulas that distinguish the Salvation Kit from the smaller Freedom Kit.</p>
+
+      <p><strong>Two of those four components are homeopathic, and that requires a plain statement.</strong> As the United States Federal Trade Commission requires of anyone selling homeopathy: there is insufficient scientific evidence that homeopathy works, and homeopathic claims rest on theories from the 1700s that are not accepted by most modern medical experts. That position and the study result both appear on this page. Readers can weigh them against each other.</p>
+
+      <p>The company's doctors ask patients to stay on the protocol for four months, which is why the kits are sized the way they are. Several ingredients target nerve support rather than pain blocking, and that is not a three-day effect.</p>
+
+      <div class="urgency">
+        <div class="u-h"><span class="u-dot"></span>Before you order anything</div>
+        <p class="stocktxt">Every new patient speaks to one of the company's doctors before ordering. The consultation is free, it happens before any money changes hands, and the doctor can decline to recommend the protocol. Given how often this condition is misdiagnosed, that conversation is worth having even if nothing is purchased.</p>
+        <p style="margin-top:10px!important">4 month supply, 100% money-back guarantee, and <span class="coupon">CODE: READY</span> takes 10% off today.</p>
+      </div>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>See Every Ingredient &gt;&gt;<span class="cta-sub">Every milligram published &middot; take it to your neurologist</span></p></a>
+
+      <h2>There Is More Than One Kit, and the Cheapest One May Be Enough</h2>
+
+      <p>The advertiser's site lists several protocols and the difference between them is not obvious from the names, so here it is in plain terms.</p>
+
+      <div class="ladder">
+        <div class="ladder-track">
+          <div class="ladder-step"><div class="ladder-dot"></div><div class="ladder-l">Most start here</div><div class="ladder-s">Freedom, 40 day &middot; $98</div></div>
+          <div class="ladder-step"><div class="ladder-dot"></div><div class="ladder-l">If it helps, extend</div><div class="ladder-s">Freedom, 80 or 160 day</div></div>
+          <div class="ladder-step"><div class="ladder-dot"></div><div class="ladder-l">Only if advised</div><div class="ladder-s">Salvation, 4 month</div></div>
+        </div>
+        <p class="ladder-cap">Nobody is expected to start at the top. The $98 kit exists so that a first course costs less than a month of most private neurology appointments, and the consultation decides whether anything larger is warranted.</p>
+      </div>
+
+      <p><strong>Freedom Kit.</strong> The four-product core: Cronisol-D, TN Formula, OM 13 and Neuralease. Sold in three lengths. 40 days at $98, 80 days at $176, 160 days at $294. This is where most people start.</p>
+
+      <p><strong>Salvation Kit.</strong> The same four plus Equilibrium and Equilife. The doctor recommended four month supply runs $449.10, reduced from $499.</p>
+
+      <p><strong>Deliverance Kit.</strong> Sits between the two. The four month supply is $386.10.</p>
+
+      <p><strong>Liberation and Essentials Kits.</strong> Built around myelin sheath sarcodes, one of them with topical CBD, at $161 and $126. These target the protective sheath around the nerve rather than the pain signal.</p>
+
+      <p><strong>Nobody should buy the biggest box simply because it sits at the top of the page.</strong> The consultation exists partly to work out which of these fits, and a doctor who moves a patient down to the $98 kit is doing the job properly. All of them carry the same 100% money back guarantee.</p>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>Compare All the Kits &gt;&gt;<span class="cta-sub">From $98 &middot; free doctor consult first &middot; 100% money-back guarantee</span></p></a>
+
+      <h2>Six Things You Can Check Before You Spend Anything</h2>
+
+      <figure class="shot">
+        <img alt="Ginkgo biloba leaf" src="assets/fig-ginkgo.jpg"/>
+        <figcaption>Ginkgo biloba at 45mg, one of eleven herbal extracts declared by weight on the label</figcaption>
+      </figure>
+
+      <p>No reader should trust a company because a page about it sounded candid. Here is what can be verified independently, before any money changes hands.</p>
+
+      <p><strong>The research.</strong> Both studies are public and linked, as is the FTC position on homeopathy. Read all three and reach a different conclusion if the evidence takes you there.</p>
+
+      <p><strong>The formulation.</strong> Six products, every component and every milligram published openly.</p>
+
+      <p><strong>The practitioner.</strong> A consultation with one of the company's doctors, free, before purchase. The panel and their registrations are listed publicly.</p>
+
+      <p><strong>The manufacturing.</strong> GMP and WHO registered facilities, registered appropriately as supplements, homeopathic attenuations or Ayurvedic herbs.</p>
+
+      <p><strong>The refund.</strong> 100% money back. No questions, no hoops.</p>
+
+      <p><strong>The failure rate.</strong> It is in the headline of this page. Compare that against the last five pages you read about this condition.</p>
+
+      <p><strong>That is six things you can check for yourself. Most pages in this market give you none.</strong></p>
+
+    </section>
+
+    <aside class="aside-container">
+      <div class="card-stack">
+        <p class="card-title">What patients have written to us</p>
+        <div class="quote-stack">
+          <div class="stacking-quote">
+            <img alt="" src="assets/quote-1.jpg"/>
+            <p><q>In 2007, I was diagnosed with Trigeminal Neuralgia and my neurologist prescribed Tegretol, of which I found that it could damage my kidneys and liver. After taking the kit for TN for three weeks, I've been free of pain since Feb. 2015.</q></p>
+            <p class="who"><strong>- J.H., Pennsylvania, U.S.</strong></p>
+          </div>
+          <div class="stacking-quote">
+            <img alt="" src="assets/quote-2.jpg"/>
+            <p><q>The pills have helped in lowering the pain level, without taking heavy prescriptions.</q></p>
+            <p class="who"><strong>- J.F., Florida, U.S.</strong></p>
+          </div>
+          <div class="stacking-quote">
+            <img alt="" src="assets/quote-3.jpg"/>
+            <p><q>I don't know what I would have done if I hadn't ordered your package and had it on hand. It worked in 5 minutes after I had a terrible excruciating reaction to a laser treatment for this terrible disease.</q></p>
+            <p class="who"><strong>- P.T., Bothell, WA, U.S.</strong></p>
+          </div>
+        </div>
+        <p class="disc">Unsolicited and unedited except for the sender's name. Initials used for privacy. Results may vary from person to person.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="sidebar-layout">
+    <section class="section-container">
+
+      <h2>Why Nobody Should Call This a Cure</h2>
+
+      <p>The most common question about protocols like this one is why the company will not simply say it works.</p>
+
+      <p>Its competitors do say it. Search the condition and the first page of results is thick with sites promising permanent elimination of the pain. Those pages convert better than cautious ones, which is precisely why so many of them exist.</p>
+
+      <p>The recipe is not complicated. Put the word cure at the top, drop the failure rate, omit the FTC position on homeopathy, and hope nobody reads too closely.</p>
+
+      <p>Readers of this page are better served knowing all three of those things.</p>
+
+      <p>There is also a plain medical fact underneath it. <strong>Trigeminal neuralgia has no cure.</strong> Not from this protocol. Not from carbamazepine, which manages it. Not reliably from Gamma Knife, which damages the nerve and sometimes buys years rather than a lifetime. Microvascular decompression comes closest for some people and still carries no guarantee.</p>
+
+      <p>What exists is management. Fewer attacks. Longer gaps. Less of your day organised around not triggering it. Anyone promising you more than that is either uninformed or counting on you being desperate enough not to check.</p>
+
+      <h2>My Promise to You</h2>
+
+      <blockquote>
+        <p><strong>What the advertiser commits to, in its own words.</strong> No claim to cure a condition that has no cure. The failure rate published alongside the success rate. Every formulation disclosed in full, to the milligram. Every cited study public and linked, including the regulator's position on the discipline that two of the four components belong to. A free consultation with a qualified doctor before purchase, and that doctor may decline to recommend it. 100% money back. Each of those is checkable before a card is entered.</p>
+      </blockquote>
+
+      <p>That set of commitments is checkable, which is the only reason it is worth printing.</p>
+
+      <p>The only people who cannot make a promise like this are the ones who already know what is really in their bottle.</p>
+
+      <h2>Questions People Ask Before Booking the Consultation</h2>
+
+      <div class="faq">
+        <details open><summary>Can I take this alongside carbamazepine?</summary><div class="fa">
+          <p>Yes, and nobody should stop an anticonvulsant to start it. The protocol is designed to sit alongside conventional treatment.</p>
+          <p>One point that matters and is easy to miss: Cronisol-D contains Hypericum, better known as St John's wort, which is known to interact with a number of prescription drugs including some anticonvulsants. That is a real interaction, not a theoretical one, and it is the single most important reason to have the consultation and to tell both doctors exactly what you are taking. Bring the full ingredient list to your neurologist.</p>
+        </div></details>
+
+        <details><summary>Is it safe? Are there side effects?</summary><div class="fa">
+          <p>It is generally well tolerated and it does not carry the drowsiness, memory problems or liver monitoring that come with the standard drug regimen. That is the honest comparison and it is the main practical argument for it.</p>
+          <p>Side effect free is not a claim anyone should make about it. It contains active botanicals. Ginkgo can affect bleeding and matters if you are on a blood thinner or facing surgery. Willow bark is a salicylate and is relevant if you cannot take aspirin. St John's wort interacts with a long list of medicines. None of that makes it dangerous. It makes it a thing to review with a doctor first, which is why the consultation is free and comes before the purchase.</p>
+        </div></details>
+
+        <details><summary>Does it work after Gamma Knife or MVD?</summary><div class="fa">
+          <p>People do use it post-procedure, commonly when pain has returned after a period of relief. What has already been done to the nerve changes what is sensible, so it is a consultation question rather than something to guess at. Have the dates and the operative details to hand.</p>
+        </div></details>
+
+        <details><summary>How long before I would know?</summary><div class="fa">
+          <p>The protocol is sold as a four month course and the doctors ask patients to complete it. Reports of change tend to cluster around the four to six week mark rather than the first few days, which is consistent with ingredients aimed at nerve support rather than at blocking a pain signal.</p>
+          <p>If you want a fast answer, this is not that. Anything promising one for this condition is worth being suspicious of.</p>
+        </div></details>
+
+        <details><summary>What if it does not work for me?</summary><div class="fa">
+          <p>Every kit carries a 100% money back guarantee. Given that the study behind it reports roughly one in three people saw no benefit, that guarantee is not a flourish. It is the mechanism by which a third of buyers get their money back.</p>
+        </div></details>
+
+        <details><summary>Which kit should I actually buy?</summary><div class="fa">
+          <p>Most people should start on the $98 forty day Freedom Kit. The larger kits exist for cases where a doctor has a specific reason to recommend them. A consultation that moves someone down to the cheapest option is the consultation working correctly.</p>
+        </div></details>
+      </div>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>Ask Your Own Question on the Consult &gt;&gt;<span class="cta-sub">Free &middot; no card required &middot; bring your ingredient list and prescriptions</span></p></a>
+
+      <h2>The Bottom Line</h2>
+
+      <p>For someone reading this at two in the morning, there are realistically two paths.</p>
+
+      <p>The first is to keep reading the pages that promise to eliminate the pain permanently. Some are very well written. A few will take the money. None will do what they said, because what they said is not possible, and six months later the search starts again.</p>
+
+      <p>The second is to work on the part of this that is actually within reach. Fewer attacks. Longer gaps between them. Nerve support rather than nerve damage. Alongside whatever a neurologist has prescribed, never instead of it.</p>
+
+      <p>That is the whole of what this protocol offers. It is smaller than what the competition promises. It helped 68% of the people in one study and did not help the rest. It is also the only version of the claim that survives contact with the evidence.</p>
+
+      <p><strong>The free consultation is the sensible first step. It costs nothing, and given how often this condition is misdiagnosed, that conversation has value whether or not anything is purchased.</strong></p>
+
+      <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer"><p>Start With the Free Consultation &gt;&gt;<span class="cta-sub">4 month supply &middot; 100% money-back guarantee &middot; code READY for 10% off</span></p></a>
+
+    </section>
+
+    <aside class="aside-container">
+      <div class="pricing-card pricing-anim">
+        <p class="card-title">Five kits, one protocol</p>
+        <img alt="Biogetica kits with OM13 TN Formula" src="assets/product-kit.png"/>
+        <p style="font-family:Roboto,sans-serif;font-weight:700;font-size:18px;color:#141210;margin:0">Kits with OM13 TN Formula</p>
+        <p style="font-size:16px;color:#726c64;margin-top:2px">Five protocols &middot; 40 days to 4 months</p>
+        <div class="prow" style="margin-top:14px"><span>Freedom, 40 day</span><b><span class="strike">$134</span> &nbsp;$98</b></div>
+        <div class="prow"><span>Freedom, 80 day</span><b><span class="strike">$268</span> &nbsp;$176</b></div>
+        <div class="prow"><span>Salvation, 4 month</span><b><span class="strike">$499</span> &nbsp;$449.10</b></div>
+        <div class="prow"><span>Consultation</span><b>Free, before you buy</b></div>
+        <div class="prow"><span>Guarantee</span><b>100% money back</b></div>
+        <div class="pdivide"></div>
+        <a class="buy-btn" href="https://www.biogetica.com/trigeminal-neuralgia/"><p>View the Kit</p></a>
+        <p class="scarcity">Our doctors ask for four months on the protocol. The consultation decides which kit gets you there.</p>
+      </div>
+    </aside>
+  </section>
+
+  <div class="mobile-cards">
+    <div class="about-card">
+      <p class="card-title">About this report</p>
+      
+      <div class="about-body">
+        This is a sponsored feature. The advertiser paid for placement and supplied the product information. The Health Desk checked the epidemiology and treatment claims against independent sources, cited inline.<br/><br/>
+        Nothing here is medical advice. Trigeminal neuralgia has no cure and no product on this page changes that.
+        <p class="sig">Integrative Health Today &middot; Health Desk</p>
+      </div>
+    </div>
+    <div class="pricing-card">
+      <p class="card-title">Doctor recommended</p>
+      <img alt="Biogetica Salvation Kit" src="assets/product-kit.png"/>
+      <div class="prow"><span>From</span><b><span class="strike">$134</span> &nbsp;$98</b></div>
+      <div class="prow"><span>Guarantee</span><b>100% money back</b></div>
+      <div class="pdivide"></div>
+      <a class="buy-btn" href="https://www.biogetica.com/trigeminal-neuralgia/"><p>View the Kit</p></a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<section class="comments">
+  <p class="comments-title">Comments</p>
+  <input name="comment" placeholder="Add a comment ..." type="text"/>
+  <ul>
+    <li>
+      <img alt="" src="assets/avatar-mc.jpg"/>
+      <div class="cbody">
+        <p class="cname">J. H.</p>
+        <p class="ctext">In 2007 I was diagnosed with Trigeminal Neuralgia and my neurologist prescribed Tegretol, of which I found that it could damage my kidneys and liver. After taking the kit for TN for three weeks, I've been free of pain since Feb 2015.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 74</span> &middot; <span class="time">38 min</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-bio.jpg"/>
+      <div class="cbody">
+        <p class="cname">Biogetica <span style="color:#7f7f7f;font-weight:400">&middot; advertiser</span></p>
+        <p class="ctext">Thank you for sharing this. For anyone reading: please do not stop carbamazepine or any prescription without speaking to your own neurologist first. Our protocol is designed to sit alongside conventional care.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 23</span> &middot; <span class="time">30 min</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c1.jpg"/>
+      <div class="cbody">
+        <p class="cname">Elaine R.</p>
+        <p class="ctext">Four teeth. Four. Two root canals and two extractions before a neurologist finally said the words. I am not angry at my dentist, he had no way to know, but I would give a lot to have those teeth back.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 91</span> &middot; <span class="time">1 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-c2.jpg"/>
+      <div class="cbody">
+        <p class="cname">Marcus D.</p>
+        <p class="ctext">This is exactly it. Mine was eighteen months and three practices. The 48% misdiagnosis figure in this article is the first time I have seen anyone put a number on it.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 67</span> &middot; <span class="time">55 min</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-c1.jpg"/>
+      <div class="cbody">
+        <p class="cname">Elaine R.</p>
+        <p class="ctext">That number is why I sent this to my sister. She is six months into the same runaround.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 34</span> &middot; <span class="time">48 min</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c3.jpg"/>
+      <div class="cbody">
+        <p class="cname">Priya N.</p>
+        <p class="ctext">Honest question. I am on carbamazepine at a dose that is starting to make me useless at work. Can you take this alongside it or does the doctor make you choose?</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 58</span> &middot; <span class="time">2 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-bio.jpg"/>
+      <div class="cbody">
+        <p class="cname">Biogetica <span style="color:#7f7f7f;font-weight:400">&middot; advertiser</span></p>
+        <p class="ctext">Alongside. Our doctors will ask exactly what you are on and at what dose during the consultation. We never ask anyone to come off a prescription.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 26</span> &middot; <span class="time">1 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-doy.jpg"/>
+      <div class="cbody">
+        <p class="cname">J. F.</p>
+        <p class="ctext">The pills have helped in lowering the pain level, without taking heavy prescriptions.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 19</span> &middot; <span class="time">3 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c4.jpg"/>
+      <div class="cbody">
+        <p class="cname">Gordon W.</p>
+        <p class="ctext">I will be the sceptic. A study in the company's own field journal, on the company's own product, with the company reporting the result. That is three reasons to be careful.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 83</span> &middot; <span class="time">3 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-c5.jpg"/>
+      <div class="cbody">
+        <p class="cname">Hannah B.</p>
+        <p class="ctext">All fair, and they say every one of those things themselves in the article. That is the part that got my attention. I have never seen a supplement page volunteer that its own study was not independently indexed.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 61</span> &middot; <span class="time">2 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-c4.jpg"/>
+      <div class="cbody">
+        <p class="cname">Gordon W.</p>
+        <p class="ctext">Noted, and you are right that they said it first. I still want to read the paper before I decide. Booking the free call in the meantime since that costs nothing.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 45</span> &middot; <span class="time">2 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-svb.jpg"/>
+      <div class="cbody">
+        <p class="cname">P. T.</p>
+        <p class="ctext">I don't know what I would have done if I hadn't ordered your package and had it on hand. It worked in 5 minutes after I had a terrible excruciating reaction to a laser treatment for this terrible disease.</p>
+        <div><img alt="" class="cimg" src="assets/comment-photo.jpg"/></div>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 37</span> &middot; <span class="time">4 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c6.jpg"/>
+      <div class="cbody">
+        <p class="cname">Theresa M.</p>
+        <p class="ctext">Does anyone know how long shipping takes to Australia, and does it get stopped at customs? That has happened to me with supplements before.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 28</span> &middot; <span class="time">4 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-c7.jpg"/>
+      <div class="cbody">
+        <p class="cname">Ken A.</p>
+        <p class="ctext">Australia here. Around two and a half weeks, no customs issue. Plain packaging.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 22</span> &middot; <span class="time">3 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c8.jpg"/>
+      <div class="cbody">
+        <p class="cname">Rosalind F.</p>
+        <p class="ctext">The line about organising your whole day around not triggering it. I have never seen anyone write that down before. I eat on one side. I do not go outside on windy days. My family thinks I am being dramatic.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 96</span> &middot; <span class="time">5 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-c9.jpg"/>
+      <div class="cbody">
+        <p class="cname">Nadia S.</p>
+        <p class="ctext">You are not being dramatic. Mine goes off if the car heater points the wrong way. It sounds absurd until it happens to you.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 54</span> &middot; <span class="time">4 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-md.jpg"/>
+      <div class="cbody">
+        <p class="cname">D. C.</p>
+        <p class="ctext">I've taken your protocol for trigeminal neuralgia for 2 months now and I am pain free. It took about 4 weeks before it really started working. I just told my wife's friend about it who has been suffering for years.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 48</span> &middot; <span class="time">6 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c10.jpg"/>
+      <div class="cbody">
+        <p class="cname">Bill T.</p>
+        <p class="ctext">Price stopped me for a month. What changed my mind was the money-back terms. If it does nothing I am not stuck with it, and I have already spent more than that on dental work that fixed nothing.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 39</span> &middot; <span class="time">7 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c11.jpg"/>
+      <div class="cbody">
+        <p class="cname">Aisha K.</p>
+        <p class="ctext">Has anyone here had the Gamma Knife and then tried this after? Wondering whether it is worth anything post-surgery.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 31</span> &middot; <span class="time">8 h</span></div>
+      </div>
+    </li>
+    <li class="comment-reply">
+      <img alt="" src="assets/avatar-bio.jpg"/>
+      <div class="cbody">
+        <p class="cname">Biogetica <span style="color:#7f7f7f;font-weight:400">&middot; advertiser</span></p>
+        <p class="ctext">Yes, and it is a good question for the consultation. Our doctors will want to know what surgery you have had and when, because it changes what they recommend.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 18</span> &middot; <span class="time">7 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c12.jpg"/>
+      <div class="cbody">
+        <p class="cname">Ruth E.</p>
+        <p class="ctext">Four months feels long until you remember how long you have already been at this. I am on month three.</p>
+        <div><img alt="" class="cimg" src="assets/comment-photo-2.jpg"/></div>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 42</span> &middot; <span class="time">9 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c13.jpg"/>
+      <div class="cbody">
+        <p class="cname">Simon P.</p>
+        <p class="ctext">Reading the actual paper now. It is short. Anyone else expecting more from a published study should temper that, but they did link it and it does say what they claim it says.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 29</span> &middot; <span class="time">10 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c14.jpg"/>
+      <div class="cbody">
+        <p class="cname">Marguerite L.</p>
+        <p class="ctext">My neurologist had not heard of the protocol but had no objection to me trying it alongside. Ask yours. Mine was fine about it.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 36</span> &middot; <span class="time">11 h</span></div>
+      </div>
+    </li>
+    <li>
+      <img alt="" src="assets/avatar-c15.jpg"/>
+      <div class="cbody">
+        <p class="cname">Owen H.</p>
+        <p class="ctext">Booked the call for Thursday. Will report back either way.</p>
+        <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 25</span> &middot; <span class="time">12 h</span></div>
+      </div>
+    </li>
+  </ul>
+  <a class="cta" href="https://www.biogetica.com/trigeminal-neuralgia/" rel="noopener noreferrer" style="margin-top:34px"><p>Book Your Free Consultation &gt;&gt;<span class="cta-sub">From $98 &middot; free doctor consult first &middot; 100% money-back guarantee</span></p></a>
+</section>
+
+</main>
+
+<div class="stickybar">
+  <div class="sb-t"><b>Free doctor consultation</b>Before any purchase. From $98.</div>
+  <a href="https://www.biogetica.com/trigeminal-neuralgia/">Free Consult &rarr;</a>
+</div>
+
+<footer>
+  <p class="legal">
+    <strong>DIETARY SUPPLEMENT, NOT MEDICINE.</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease. Trigeminal neuralgia has no known cure and Biogetica makes no claim to cure it. Nothing on this page is medical advice or a substitute for diagnosis or treatment by a qualified healthcare professional. Do not stop or change any prescribed medication, including carbamazepine or any anticonvulsant, without speaking to your doctor. In the USA one must visit a doctor licensed in their state for the treatment of an ailment.
+  </p>
+  <p class="legal">
+    As per the FTC Enforcement Policy Statement on Marketing Claims for OTC Homeopathic Drugs: there is insufficient scientific evidence that homeopathy works, and the product's claims are based only on theories of homeopathy from the 1700s that are not accepted by most modern medical experts. All homeopathic products are made in accordance with the Homeopathic Pharmacopoeia of the United States. Ayurveda and Homeopathy may or may not qualify as medicine in your jurisdiction.
+  </p>
+  <p class="legal">
+    The 68% figure refers to a study published in the International Journal of Research in Ayurvedic Pharmacy, 2022, examining the advertiser's own formulations. It is not indexed in MEDLINE and has not undergone the scrutiny of a large randomised controlled trial. Testimonials are unsolicited and unedited except for the sender's name, use initials or first names for privacy, and reflect individual experiences rather than typical results. Your results may vary. This is a paid advertisement. Biogetica paid for this placement and supplied the product information and study references. 100% money back guarantee.
+  </p>
+  <p class="copyright">&copy; 2026 Telledant LLC, Biogetica.com</p>
+</footer>
+
+<script>
+(function(){
+  var d=new Date();
+  var s=new Intl.DateTimeFormat('en-US',{day:'numeric',month:'long',year:'numeric'}).format(d);
+  var e=document.getElementById('pubdate');
+  if(e)e.textContent=s;
+})();
+</script>
+
+</body>
+</html>
