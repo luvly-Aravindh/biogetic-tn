@@ -41,7 +41,7 @@ br.spacer{display:block;content:"";margin-top:14px}
 .fn{font-size:13px !important;color:#6a6a6a;font-family:Roboto,sans-serif !important;margin-top:-14px !important;line-height:20px !important}
 .duo{display:grid;grid-template-columns:1fr;gap:12px;margin:26px 0}
 .duo .dcell{aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:#e9edf1}
-.duo .dcell img{width:100%;height:100%;object-fit:cover}
+.duo .dcell img{width:100%;height:100%}
 .sidebar-layout{display:grid;grid-template-columns:1fr}
 .sidebar-layout>*{min-width:0}
 .aside-container{display:none}
@@ -52,7 +52,7 @@ br.spacer{display:block;content:"";margin-top:14px}
 .about-card>img{width:160px;height:auto;margin:20px auto;border-radius:8px;display:block}
 .about-body{font-family:Georgia,serif;font-size:17px;line-height:27px;color:#2f2f2f}
 .about-body .sig{margin-top:16px;font-family:Roboto,sans-serif;font-weight:700;font-size:16px}
-.stacking-quote img{max-height:150px;object-fit:cover;width:100%;border-radius:5px;margin-bottom:20px}
+.stacking-quote img{width:100%;border-radius:5px;margin-bottom:20px}
 .stacking-quote p{font-family:Georgia,serif;font-size:18px;margin:0}
 .stacking-quote .who{margin-top:16px}
 .quote-stack{margin-top:30px}
@@ -86,7 +86,7 @@ br.spacer{display:block;content:"";margin-top:14px}
 .cmeta{height:24px;display:flex;align-items:center;gap:4px;margin:4px 0}
 .cmeta .act{font-size:12px;color:#627aad;line-height:20px}
 .cmeta .num,.cmeta .time{font-size:12px;color:#7f7f7f;line-height:20px;display:flex;align-items:center}
-.cimg{height:200px;width:300px;object-fit:cover;border-radius:6px;background:#dfe3e8;margin:6px 0}
+.cimg{width:300px;border-radius:6px;background:#dfe3e8;margin:6px 0}
 .legal{padding:0 20px 14px;font-family:"Open Sans",sans-serif;font-size:12px;line-height:20px;color:#555;max-width:1170px;margin:0 auto}
 .legal:first-of-type{padding-top:40px}
 .legal strong{color:#222}
@@ -107,7 +107,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
 }
 
 .shot{margin:26px 0}
-.shot img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.shot img{width:100%;border-radius:10px;display:block}
 .shot figcaption{font-family:Roboto,sans-serif;font-size:13px;line-height:19px;color:#6a6a6a;margin-top:9px;padding-left:2px;border-left:3px solid #85d3e8;padding-left:10px}
 .shot .cap-src{display:block;color:#9a9a9a;font-size:12px;margin-top:2px}
 
@@ -192,6 +192,31 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
 @media (min-width:768px) and (max-width:980px){.swipe{display:block}}
 @media (prefers-reduced-motion:reduce){.stickybar a{animation:none!important}}
 
+/* ---- phones + tablets (below 1024px): desktop layout untouched ---- */
+@media (max-width:1023px){
+  .swipe{display:none!important}
+  .cmp:not(.cmp-stack){min-width:0}
+  .cmp-stack{min-width:0;font-size:14px}
+  .cmp-stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .cmp-stack,.cmp-stack tbody,.cmp-stack tr,.cmp-stack td{display:block;width:100%}
+  .cmp-stack tr{border:1px solid #e2e6ea;border-radius:6px;overflow:hidden;margin-bottom:12px;background:#fff!important}
+  .cmp-stack td{border:0;border-top:1px solid #e2e6ea;display:grid;grid-template-columns:minmax(96px,34%) 1fr;gap:12px;padding:10px 12px}
+  .cmp-stack td::before{content:attr(data-label);font-weight:700;font-size:12.5px;color:#5B6B70;line-height:1.45}
+  .cmp-stack td:first-child{display:block;border-top:0;background:#0f2b33;color:#fff!important;white-space:normal;font-size:14.5px}
+  .cmp-stack td:first-child::before{content:none}
+  .cmp-stack .hi td:first-child{background:#0d6b0c}
+  .cmp-stack .hi td{background:#F2FBF2}
+  .cmp-stack td:empty::after{content:"\2014";color:#9aa5a8}
+  .prow{gap:10px}
+  .prow b{text-align:right}
+  .ladder-track{align-items:flex-start}
+  .ladder-step{padding:0 3px}
+}
+@media (max-width:360px){
+  .stickybar{gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+  .stickybar .sb-t{font-size:11px}
+  .stickybar a{padding:10px 10px;font-size:13px}
+}
 </style>
 </head>
 <body>
@@ -233,7 +258,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
 
   <div class="duo">
     <div class="dcell"><img alt="Dental treatment" src="assets/hero-dental.jpg"/></div>
-    <div class="dcell"><img alt="Brain MRI" src="assets/hero-mri.jpg"/></div>
+    <div class="dcell"><img alt="Brain MRI" src="assets/hero-mri.png" style="border: 1px solid #ccc;" /></div>
   </div>
 
   <br class="spacer"/>
@@ -264,7 +289,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
       <h2>First, What This Condition Actually Is</h2>
 
       <figure class="shot">
-        <img alt="Trigeminal nerve anatomy" src="assets/fig-nerve.jpg"/>
+        <img alt="Trigeminal nerve anatomy" src="assets/Trigeminal Nerve MRI Anatomy Guide.png"/>
         <figcaption>The fifth cranial nerve, and the reason the pain feels like it is coming from your teeth</figcaption>
       </figure>
 
@@ -286,6 +311,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
 
       <figure class="shot">
         <img alt="Medication and clinical instruments" src="assets/fig-meds.jpg"/>
+                <img alt="Medication and clinical instruments" src="assets/images.png"style="margin-top:10px;border: 1px solid #ccc;" />
         <figcaption>Carbamazepine is the only drug with a specific FDA indication for this condition</figcaption>
       </figure>
 
@@ -307,14 +333,14 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
 
       <p class="swipe">Swipe the table sideways to see every column</p>
       <div class="cmp-wrap">
-        <table class="cmp">
+        <table class="cmp cmp-stack">
           <thead><tr><th>Option</th><th>What it does</th><th>Main trade-off</th><th>Typical cost</th></tr></thead>
           <tbody>
-            <tr><td>Carbamazepine</td><td>Calms nerve firing. First line, and the only drug with a specific FDA indication for this condition.</td><td>Drowsiness, memory problems, unsteadiness, liver monitoring. Effect often fades over years.</td><td>Low</td></tr>
-            <tr><td>Opioids</td><td>Blunt pain signalling generally.</td><td>Work poorly on this specific pain. Dependency and tolerance. Most specialists avoid them here.</td><td>Low to moderate</td></tr>
-            <tr><td>Gamma Knife</td><td>Radiation damages the nerve so it stops transmitting. No incision.</td><td>Weeks to months before relief. Facial numbness common. Recurrence within a few years for a substantial share.</td><td>High</td></tr>
-            <tr><td>Microvascular<br/>decompression</td><td>Moves the blood vessel off the nerve. Addresses a cause rather than a symptom.</td><td>Brain surgery. Hearing loss, facial weakness, CSF leak, rare stroke. Not offered to everyone.</td><td>Highest</td></tr>
-            <tr class="hi"><td>Biogetica<br/>protocol</td><td>Nerve support and inflammatory pathways rather than blocking the signal. Taken alongside existing treatment.</td><td>Evidence is one small study in a non-indexed journal. Takes months. Helped 68% and not the other 32%.</td><td>$98 to $449</td></tr>
+            <tr><td>Carbamazepine</td><td data-label="What it does">Calms nerve firing. First line, and the only drug with a specific FDA indication for this condition.</td><td data-label="Main trade-off">Drowsiness, memory problems, unsteadiness, liver monitoring. Effect often fades over years.</td><td data-label="Typical cost">Low</td></tr>
+            <tr><td>Opioids</td><td data-label="What it does">Blunt pain signalling generally.</td><td data-label="Main trade-off">Work poorly on this specific pain. Dependency and tolerance. Most specialists avoid them here.</td><td data-label="Typical cost">Low to moderate</td></tr>
+            <tr><td>Gamma Knife</td><td data-label="What it does">Radiation damages the nerve so it stops transmitting. No incision.</td><td data-label="Main trade-off">Weeks to months before relief. Facial numbness common. Recurrence within a few years for a substantial share.</td><td data-label="Typical cost">High</td></tr>
+            <tr><td>Microvascular<br/>decompression</td><td data-label="What it does">Moves the blood vessel off the nerve. Addresses a cause rather than a symptom.</td><td data-label="Main trade-off">Brain surgery. Hearing loss, facial weakness, CSF leak, rare stroke. Not offered to everyone.</td><td data-label="Typical cost">Highest</td></tr>
+            <tr class="hi"><td>Biogetica<br/>protocol</td><td data-label="What it does">Nerve support and inflammatory pathways rather than blocking the signal. Taken alongside existing treatment.</td><td data-label="Main trade-off">Evidence is one small study in a non-indexed journal. Takes months. Helped 68% and not the other 32%.</td><td data-label="Typical cost">$98 to $449</td></tr>
           </tbody>
         </table>
       </div>
@@ -443,7 +469,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
       <h2>Six Things You Can Check Before You Spend Anything</h2>
 
       <figure class="shot">
-        <img alt="Ginkgo biloba leaf" src="assets/fig-ginkgo.jpg"/>
+        <img alt="Ginkgo biloba leaf" src="assets/Six Things.jpg"/>
         <figcaption>Ginkgo biloba at 45mg, one of eleven herbal extracts declared by weight on the label</figcaption>
       </figure>
 
@@ -470,17 +496,17 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
         <p class="card-title">What patients have written to us</p>
         <div class="quote-stack">
           <div class="stacking-quote">
-            <img alt="" src="assets/quote-1.jpg"/>
+            <img alt="" src="assets/quote-1.png"/>
             <p><q>In 2007, I was diagnosed with Trigeminal Neuralgia and my neurologist prescribed Tegretol, of which I found that it could damage my kidneys and liver. After taking the kit for TN for three weeks, I've been free of pain since Feb. 2015.</q></p>
             <p class="who"><strong>- J.H., Pennsylvania, U.S.</strong></p>
           </div>
           <div class="stacking-quote">
-            <img alt="" src="assets/quote-2.jpg"/>
+            <img alt="" src="assets/quote-2.png"/>
             <p><q>The pills have helped in lowering the pain level, without taking heavy prescriptions.</q></p>
             <p class="who"><strong>- J.F., Florida, U.S.</strong></p>
           </div>
           <div class="stacking-quote">
-            <img alt="" src="assets/quote-3.jpg"/>
+            <img alt="" src="assets/quote-3.png"/>
             <p><q>I don't know what I would have done if I hadn't ordered your package and had it on hand. It worked in 5 minutes after I had a terrible excruciating reaction to a laser treatment for this terrible disease.</q></p>
             <p class="who"><strong>- P.T., Bothell, WA, U.S.</strong></p>
           </div>
@@ -704,7 +730,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
       <div class="cbody">
         <p class="cname">P. T.</p>
         <p class="ctext">I don't know what I would have done if I hadn't ordered your package and had it on hand. It worked in 5 minutes after I had a terrible excruciating reaction to a laser treatment for this terrible disease.</p>
-        <div><img alt="" class="cimg" src="assets/comment-photo.jpg"/></div>
+        <div><img alt="" class="cimg" src="assets/terrible disease.webp"/></div>
         <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 37</span> &middot; <span class="time">4 h</span></div>
       </div>
     </li>
@@ -777,7 +803,7 @@ h2{font-size:32px;line-height:3rem;margin:48px 0 22px}
       <div class="cbody">
         <p class="cname">Ruth E.</p>
         <p class="ctext">Four months feels long until you remember how long you have already been at this. I am on month three.</p>
-        <div><img alt="" class="cimg" src="assets/comment-photo-2.jpg"/></div>
+        <div><img alt="" class="cimg" src="assets/comment-photo-2.jpeg"/></div>
         <div class="cmeta"><span class="act">Like</span> &middot; <span class="act">Reply</span> &middot; <span class="num">&#128077; 42</span> &middot; <span class="time">9 h</span></div>
       </div>
     </li>
